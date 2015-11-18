@@ -2,8 +2,11 @@
 
 JavaParser Program: 
 
-The said program can be used for reverse engineering the Source code and generation of UML Diagrams. The Java Parser and YUML are the two tools used for the said project.   
-Tools Used for Java Parser:  Java Parser: Used for parsing the Java Code for generation of tokens that analysed are clubbed to form the YUML Language. YUML: YUML is the rendering software that generates the UML diagrams from the generated language from the parser.  
+The said program can be used for reverse engineering the Source code and generation of UML Diagrams. 
+The Java Parser and YUML are the two tools used for the said project.   
+Tools Used for Java Parser: 
+Java Parser: Used for parsing the Java Code for generation of tokens that analysed are clubbed to form the YUML Language. 
+YUML: YUML is the rendering software that generates the UML diagrams from the generated language from the parser.  
 
 The UML diagrams in form of png images are stored in the source folder or as per the specified location and image name.  
  YUML: http://yuml.me  Java Parser : https://github.com/javaparser/javaparser  IDE: Eclipse  Java Version 1.8  
