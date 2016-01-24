@@ -55,10 +55,92 @@ Add below mentioned dependencies in pom.xml file of project.
 Internet connection is required for fetching the class diagram image from yUML. 
 
 
+Demo: 
+
+Sample Input Test Case 5  </br> 
+
+public interface Component {
+
+	String operation();
+
+}
+
+public class Decorator implements Component {
+
+    private Component component;
+
+    public Decorator( Component c )
+    {
+        component = c ;
+    }
+
+    public String operation()
+    {
+        return component.operation() ;
+    }
+
+}
+
+
+public class ConcreteDecoratorB extends Decorator {
+
+    private String addedState;
+
+    public ConcreteDecoratorB( Component c)
+    {
+        super( c ) ;
+    }
+
+    public String operation()
+    {
+        addedState = super.operation() ;
+        return addedBehavior( addedState ) ;
+    }
+
+    private String addedBehavior(String in) {
+        return "<h1>" + addedState + "</h1>" ;
+    }
+
+}
+
+
+public class ConcreteDecoratorA extends Decorator {
+
+	private String addedState;
+
+    public ConcreteDecoratorA( Component c)
+    {
+        super( c ) ;
+    }
+
+    public String operation()
+    {
+        addedState = super.operation() ;
+        return addedBehavior( addedState ) ;
+    }
+
+	private String addedBehavior(String in) {
+		return "<em>" + addedState + "</em>" ;
+	}
+
+}
+
+
+public class ConcreteComponent implements Component {
+
+	public String operation() {
+		return "Hello World!";
+	}
+
+}
 
 
 
+OutPut for Test Case Case 5 
 
+
+
+![OutPut Test Case Case 5](https://github.com/phaltanesaurabh/JavaUMLParser/blob/master/OuptutGeneratedUML/TestCaseOutput/image5.png)
 
 
 
