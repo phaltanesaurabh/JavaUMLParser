@@ -21,41 +21,7 @@ Java –jar  UMLparser.jar  <Location of Files> <outPutimageName(.png)>
 Eg:  
 java -jar UMLparser.jar "C:/Users/saurabh-pc/Desktop/PaulJava/uml-parser-test-2/uml-parser-test2" "image.png" 
 
-Note: The System is tested for Windows/Linux Environments. Internet Connection is necessary for program to run . (YUML  API ).    
-
-Compilation of Code for Java  
- Extract the zipped Project and import to Project. 
- Import to Eclipse using Maven. 
- Build the Project.
- The yUML requires internet connection:  YUML: http://yuml.me 
- Important library used : Java Parser : https://github.com/javaparser/javaparser  
-
-This parser parses the JAVA files and generates a UML Class diagram. 
-Dependencies: 
-.
-Add below mentioned dependencies in pom.xml file of project.  
-Dependencies: 
-Add below mentioned dependencies in pom.xml file of project. 
- 
-1. <dependency>
-    <groupId>com.github.javaparser</groupId> 
-    <artifactId>javaparser-core</artifactId> 
-    <version>2.1.0</version> 
-  </dependency> 
- 2. <dependency> 
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId> 
-    <version>20150729</version> 
-  </dependency> 
- 3. <dependency> 
-      <groupId>com.googlecode.json-simple</groupId> 
-	  <artifactId>json-simple</artifactId> 
-	  <version>1.1</version>
-	</dependency>
-Internet connection is required for fetching the class diagram image from yUML. 
-
-
-Demo: 
+<b>Demo:</b> 
 
 Sample Input Test Case 5  </br> 
 
@@ -139,11 +105,41 @@ public class ConcreteComponent implements Component {
 OutPut for Test Case Case 5 
 
 
-
 ![OutPut Test Case Case 5](https://github.com/phaltanesaurabh/JavaUMLParser/blob/master/OuptutGeneratedUML/TestCaseOutput/image5.png)
 
 
+Note: The System is tested for Windows/Linux Environments. Internet Connection is necessary for program to run . (YUML  API ).    
 
+Compilation of Code for Java  
+ Extract the zipped Project and import to Project. 
+ Import to Eclipse using Maven. 
+ Build the Project.
+ The yUML requires internet connection:  YUML: http://yuml.me 
+ Important library used : Java Parser : https://github.com/javaparser/javaparser  
+
+This parser parses the JAVA files and generates a UML Class diagram. 
+Dependencies: 
+.
+Add below mentioned dependencies in pom.xml file of project.  
+Dependencies: 
+Add below mentioned dependencies in pom.xml file of project. 
+ 
+1. <dependency>
+    <groupId>com.github.javaparser</groupId> 
+    <artifactId>javaparser-core</artifactId> 
+    <version>2.1.0</version> 
+  </dependency> 
+ 2. <dependency> 
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId> 
+    <version>20150729</version> 
+  </dependency> 
+ 3. <dependency> 
+      <groupId>com.googlecode.json-simple</groupId> 
+	  <artifactId>json-simple</artifactId> 
+	  <version>1.1</version>
+	</dependency>
+Internet connection is required for fetching the class diagram image from yUML. 
 
 
 
